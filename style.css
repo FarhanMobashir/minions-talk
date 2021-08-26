@@ -1,0 +1,50 @@
+:root {
+  --primary-color: rgb(255, 166, 0);
+  --primary-color-dark: rgb(128, 83, 0);
+}
+
+body {
+  margin: 0;
+}
+nav {
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+textarea {
+  width: 90%;
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  color: var(--primary-color-dark);
+  font-size: 18px;
+}
+
+.input-block {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+button {
+  display: block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  font-size: large;
+}
+
+.output-block {
+  margin: 1rem 2rem;
+  padding: 2rem;
+  width: 82.5%;
+  border: 2px solid var(--primary-color);
+  height: 10vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
