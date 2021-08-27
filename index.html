@@ -4,32 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Banana Speak</title>
   </head>
   <body>
-    <nav>
-      <h1>Talk Banana</h1>
-    </nav>
-    <div class="input-block">
-      <textarea
-        id="txt-input"
-        cols="30"
-        rows="10"
-        placeholder="Enter your text here..."
-      ></textarea>
-      <button id="translate-btn">Translate</button>
-    </div>
-    <h2>Your output</h2>
-    <div class="output-block" id="output"></div>
-    <footer>
-      <h3>About me</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-        accusamus odio dicta quas repudiandae consequatur reprehenderit expedita
-        maiores, libero quisquam ipsam, ex veritatis eos adipisci velit possimus
-        illo temporibus perferendis.
-      </p>
+    <header class="header">
+      <div class="header-upper">
+        <img class="image" src="./asssets/minion1.png" alt="image" />
+        <h1 class="heading">Talk Banana</h1>
+        <img class="image" src="./asssets/minion2.png" alt="image" />
+      </div>
+      <div class="header-lower">
+        <h5>Translate your text to minion’s language</h5>
+      </div>
+    </header>
+    <main class="main">
+      <div class="input-container">
+        <h5 class="label">Enter the text you want to translate</h5>
+        <textarea
+          id="txt-input"
+          cols="30"
+          rows="10"
+          placeholder="Enter you text here..."
+        ></textarea>
+        <small class="error"></small>
+        <button class="translate">Translate</button>
+      </div>
+      <div class="output-container">
+        <h5 class="label">Translated text</h5>
+        <div id="output"></div>
+        <!-- output will go here -->
+      </div>
+    </main>
+    <footer class="footer">
+      <!-- first column -->
+      <div class="footer-columns">
+        <h4 class="footer-heading">Talk Banana</h4>
+        <small class="small">Made with love and javascript</small>
+        <a class="footer-link" href="#">Source code</a>
+        <a class="footer-link" href="#">Learn to make your own</a>
+      </div>
+      <!-- second column -->
+      <div class="footer-columns">
+        <h4 class="footer-heading">Made by</h4>
+        <small class="small"
+          >Mobashir Farhan. Feel free to connect and share your feedback</small
+        >
+        <a class="footer-link" href="#">Github</a>
+        <a class="footer-link" href="#">Twitter</a>
+        <a class="footer-link" href="#">LinkedIn</a>
+      </div>
+      <!-- third column -->
+      <div class="footer-columns">
+        <h4 class="footer-heading">API Used</h4>
+        <small class="small"
+          >Funtranslation minions api <a href="#">link Here</a></small
+        >
+      </div>
     </footer>
     <script src="app.js" type="text/javascript"></script>
   </body>
