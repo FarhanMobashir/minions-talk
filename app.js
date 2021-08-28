@@ -19,23 +19,29 @@ function translate() {
   const inputValue = textInput.value;
   if (inputValue) {
     errorText.innerHTML = "";
-
+    translateButton.disabled = true;
+    translateButton.style.backgroundColor = "gray";
+    output.innerText = "Translating your text...";
     fetch(getTranslationUrl(inputValue))
       .then((res) => {
-        translateButton.disabled = "true";
-        translateButton.innerText = "Translating your text";
-        translateButton.style.backgroundColor = "gray";
         return res.json();
       })
       .then((data) => {
         if (data.error) {
+          output.style.color = "red";
           output.innerText = "Too many requests. Try after sometime";
+          translateButton.style.backgroundColor = "#466680";
+          translateButton.disabled = false;
+          // translateButton.innerText = "Translate again";
         } else {
-          translateButton.innerText = "Translate again";
           output.innerText = data.contents.translated;
+          translateButton.disabled = false;
+          translateButton.style.backgroundColor = "#466680";
+          // translateButton.innerText = "Translate again";
         }
       })
       .catch((err) => {
+        translateButton.disabled = false;
         console.log(err);
       });
   } else {
