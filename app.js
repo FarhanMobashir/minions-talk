@@ -1,15 +1,15 @@
-// selectors
+// ? selectors
 
 const textInput = document.querySelector("#txt-input");
 const translateButton = document.querySelector(".translate");
 const output = document.querySelector("#output");
 const errorText = document.querySelector(".error");
 
-// Events
+// ?  Events
 translateButton.addEventListener("click", translate);
 console.log(translateButton.disable);
 
-// logic
+// ? logic
 const serverurl = "https://api.funtranslations.com/translate/minion.json";
 function getTranslationUrl(text) {
   return serverurl + "?" + "text=" + text;
