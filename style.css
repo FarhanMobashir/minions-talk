@@ -1,7 +1,7 @@
 :root {
   /* colors */
-  --primary-yellow: #fde06f;
-  --primary-blue: #466680;
+  --primary-green: #25a345;
+  --primary-purple: #4b2582;
   --grey-light: #979797;
   --text-white: #ffffff;
   --text-black: #000000;
@@ -40,9 +40,13 @@ body {
 }
 
 .heading {
-  color: var(--primary-blue);
+  color: var(--primary-purple);
   font-size: var(--font-size-4xl);
   margin: 0 var(--spacing-05);
+}
+
+.sub-heading {
+  color: var(--text-white);
 }
 
 .image {
@@ -51,7 +55,7 @@ body {
 }
 
 .header-lower {
-  background-color: var(--primary-yellow);
+  background-color: var(--primary-green);
   height: 30px;
   display: flex;
   justify-content: center;
@@ -64,7 +68,7 @@ body {
 }
 
 #txt-input {
-  border: 5px solid var(--primary-blue);
+  border: 5px solid var(--primary-purple);
   border-radius: 5px;
   height: 40vh;
   width: 100%;
@@ -77,7 +81,7 @@ body {
 }
 
 #output {
-  border: 5px solid var(--primary-blue);
+  border: 5px solid var(--primary-purple);
   border-radius: 5px;
   height: 40vh;
   padding: var(--spacing-05);
@@ -85,7 +89,7 @@ body {
 
 .translate {
   display: block;
-  background-color: var(--primary-blue);
+  background-color: var(--primary-purple);
   padding: var(--spacing-03) var(--spacing-06);
   font-size: var(--font-size-xl);
   color: var(--text-white);
@@ -100,10 +104,11 @@ body {
 }
 
 .footer {
-  background-color: var(--primary-yellow);
+  background-color: var(--primary-green);
   display: flex;
   justify-content: space-around;
   padding: var(--spacing-07) var(--spacing-10);
+  color: var(--text-white);
 }
 
 .footer-columns {
@@ -114,8 +119,8 @@ body {
 
 .footer-link {
   display: block;
-  color: var(--text-black);
-  margin: var(--spacing-04) 0px;
+  color: var(--text-white);
+  margin: var(--spacing-03) 0px;
   font-weight: bold;
   font-size: var(--font-size-sm);
 }
@@ -128,7 +133,7 @@ body {
 }
 
 .footer-heading {
-  color: var(--primary-blue);
+  color: var(--text-white);
 }
 
 @media only screen and (max-width: 600px) {

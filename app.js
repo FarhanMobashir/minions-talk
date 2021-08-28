@@ -10,7 +10,7 @@ translateButton.addEventListener("click", translate);
 console.log(translateButton.disable);
 
 // logic
-const serverurl = "https://api.funtranslations.com/translate/minion.json";
+const serverurl = "https://api.funtranslations.com/translate/ferb-latin.json";
 function getTranslationUrl(text) {
   return serverurl + "?" + "text=" + text;
 }
@@ -42,7 +42,7 @@ function translate() {
       })
       .catch((err) => {
         translateButton.disabled = false;
-        console.log(err);
+        console.log("Error occured", err);
       });
   } else {
     output.innerText = "";
