@@ -45,6 +45,7 @@ function translate() {
         console.log(err);
       });
   } else {
+    output.innerText = "";
     errorText.innerHTML = "Please enter text above";
     setTimeout(() => {
       errorText.innerHTML = "";
