@@ -113,7 +113,7 @@ body {
 .footer-columns {
   display: flex;
   flex-direction: column;
-  margin: 0px 100px;
+  margin: 0px 12%;
 }
 
 .footer-link {
