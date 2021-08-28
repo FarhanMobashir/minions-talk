@@ -1,6 +1,6 @@
 :root {
   /* colors */
-  --primary-yellow: #fde06f;
+  --primary-yellow: #fde06b;
   --primary-blue: #466680;
   --grey-light: #979797;
   --text-white: #ffffff;
@@ -43,6 +43,10 @@ body {
   color: var(--primary-blue);
   font-size: var(--font-size-4xl);
   margin: 0 var(--spacing-05);
+}
+
+.sub-heading {
+  color: var(--text-black);
 }
 
 .image {
@@ -115,7 +119,7 @@ body {
 .footer-link {
   display: block;
   color: var(--text-black);
-  margin: var(--spacing-04) 0px;
+  margin: var(--spacing-03) 0px;
   font-weight: bold;
   font-size: var(--font-size-sm);
 }

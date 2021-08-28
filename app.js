@@ -42,7 +42,7 @@ function translate() {
       })
       .catch((err) => {
         translateButton.disabled = false;
-        console.log(err);
+        console.log("Error occured", err);
       });
   } else {
     output.innerText = "";
